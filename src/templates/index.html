@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Spotter</title>
+</head>
+<body>
+<h1>Semantic Spotter</h1>
+<form method="POST" action="/query">
+    <input type="text" name="query" placeholder="Enter your query">
+    <input type="submit" value="Search">
+</form>
+{% if response %}
+<p><strong>Response:</strong> {{ response }}</p>
+{% endif %}
+</body>
+</html>
